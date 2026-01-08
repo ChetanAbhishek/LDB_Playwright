@@ -3,8 +3,9 @@ const { BasePage } = require('./base.page');
 class ExportPage extends BasePage {
   constructor(page) {
     super(page);
+    this.shipNav = page.locator(':text-is("Export")').click();
     this.shippingBillInput = page.locator('#cntrNo');
-    this.searchBtn = page.locator('button:has-text("Search")');
+    this.searchBtn = page.locator('img.search__icon.ng-tns-c244-0');
   }
 
   async open() {
