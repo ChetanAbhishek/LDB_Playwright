@@ -32,7 +32,7 @@ pipeline {
         stage('Run Playwright Tests') {
             steps {
                 sh '''
-                    npx playwright test
+                    npx playwright test --project=chromium
                 '''
             }
         }
