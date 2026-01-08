@@ -3,7 +3,7 @@ class ContainerPage {
     this.page = page;
    // this.frame = page.frameLocator('iframe[src*="container"]');
 
-    this.containerInput = this.page.locator('#cntrNo')
+    this.containerInput = this.page.locator('#cntrNo');
     this.searchBtn = this.page.locator("//img[@class='search__icon ng-tns-c244-0']");
   }
 
