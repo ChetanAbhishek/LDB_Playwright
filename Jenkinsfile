@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Nodes_LDB_25'   // Must match NodeJS name in Jenkins Global Tool Configuration
+        nodejs 'NodJS_25'   // Must match NodeJS name in Jenkins Global Tool Configuration
     }
 
     environment {
